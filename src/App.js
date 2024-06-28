@@ -1,48 +1,50 @@
 
-import { Field, Form, Formik} from 'formik';
+// import { Field, Form, Formik} from 'formik';
 import './App.css';
-import { useState } from 'react';
+import Remo from './Remo';
+// import { useState } from 'react';
+
 
 function App() {
-  const [data, setdata] = useState([])
-  const [id, setid] = useState(null)
-  const [inivalue, setinivalue] = useState({
-    name: '',
-    surname: ''
-  })
+  // const [data, setdata] = useState([])
+  // const [id, setid] = useState(null)
+  // const [inivalue, setinivalue] = useState({
+  //   name: '',
+  //   surname: ''
+  // })
 
-  const handel = (values, { resetForm }) => {
-    if (id !== null) {
-      let copy = [...data]
-      copy[id] = values
-      setdata(copy)
-      setid(null)
-    }
-    else {
-      setdata([...data, values])
-      resetForm()
-    }
-    setinivalue({
-      name:'',
-      surname:''
-    })
-  }
-  const deletedata = (index) => {
-    let copy = [...data]
-    copy.splice(index, 1)
-    setdata(copy)
-  }
-  const updatedata = (item, index) => {
-    setinivalue({
-      'name': item.name,
-      'surname': item.surname
-    })
-    setid(index)
+  // const handel = (values, { resetForm }) => {
+  //   if (id !== null) {
+  //     let copy = [...data]
+  //     copy[id] = values
+  //     setdata(copy)
+  //     setid(null)
+  //   }
+  //   else {
+  //     setdata([...data, values])
+  //     resetForm()
+  //   }
+  //   setinivalue({
+  //     name:'',
+  //     surname:''
+  //   })
+  // }
+  // const deletedata = (index) => {
+  //   let copy = [...data]
+  //   copy.splice(index, 1)
+  //   setdata(copy)
+  // }
+  // const updatedata = (item, index) => {
+  //   setinivalue({
+  //     'name': item.name,
+  //     'surname': item.surname
+  //   })
+  //   setid(index)
 
-  }
+  // }
   return (
     <div className="App">
-      <Formik
+      {/* <Formik
        enableReinitialize
         initialValues={inivalue}
         onSubmit={handel}
@@ -70,7 +72,8 @@ function App() {
             </tr>
           ))
         }
-      </table>
+      </table> */}
+      <Remo>  </Remo>
     </div>
   );
 }
