@@ -1,7 +1,8 @@
 
 // import { Field, Form, Formik} from 'formik';
 import './App.css';
-import Remo from './Remo';
+import Local from './Local';
+// import Remo from './Remo';
 // import { useState } from 'react';
 
 
@@ -73,7 +74,8 @@ function App() {
           ))
         }
       </table> */}
-      <Remo>  </Remo>
+      {/* <Remo>  </Remo> */}
+      <Local></Local>
     </div>
   );
 }
