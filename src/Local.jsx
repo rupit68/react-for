@@ -22,7 +22,9 @@ const Local = () => {
         }}
         onSubmit={hendal}>
             <Form>
-                name:-<Field name="name"></Field>
+                name:-<Field name="name">
+                    
+                </Field>
                 name:-<Field name="surname"></Field>
                 <input type="submit" />
             </Form>

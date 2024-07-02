@@ -1,6 +1,7 @@
 import React from 'react'
 
 const LocalUse = () => {
+  
 
     const st = localStorage.getItem('el')
     console.log(st);
