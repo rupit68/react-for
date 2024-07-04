@@ -1,10 +1,10 @@
 
 // import { Field, Form, Formik} from 'formik';
 import './App.css';
-import Local from './Local';
+// import Local from './Local';
 // import Remo from './Remo';
 // import { useState } from 'react';
-
+import LocalUse from './LocalUse';
 
 function App() {
   // const [data, setdata] = useState([])
@@ -74,8 +74,9 @@ function App() {
           ))
         }
       </table> */}
+      <LocalUse></LocalUse>
       {/* <Remo>  </Remo> */}
-      <Local></Local>
+      {/* <Local></Local> */}
     </div>
   );
 }
